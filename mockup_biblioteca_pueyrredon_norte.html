@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Popular Pueyrredón Norte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <style>
+    :root {
+      --crema:         #EDE0C4;
+      --crema-oscura:  #f6efe0;
+      --crema-suave:   #fbf6ea;
+      --verde:         #4D6B45;
+      --verde-oscuro:  #3a5235;
+      --terracota:     #C1541A;
+      --terracota-dark:#99400f;
+      --texto:         #3a3227;
+      --texto-suave:   #5a5344;
+      --borde:         #dccdac;
+      --font-titulo:   'Playfair Display', serif;
+      --font-cuerpo:   'Source Sans 3', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-cuerpo); color: var(--texto); line-height: 1.6; background: var(--crema-oscura); }
+    a { color: inherit; text-decoration: none; }
+
+    .section-title {
+      font-family: var(--font-titulo);
+      font-weight: 600;
+      font-size: 28px;
+      color: var(--verde);
+      margin-bottom: 6px;
+    }
+    .section-accent {
+      width: 60px; height: 3px;
+      background: var(--terracota);
+      margin-bottom: 0;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: var(--terracota);
+      color: #fff8f0;
+      font-family: var(--font-cuerpo);
+      font-weight: 600;
+      font-size: 16px;
+      padding: 13px 30px;
+      border-radius: 6px;
+      box-shadow: 0 2px 0 var(--terracota-dark);
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .btn-primary:hover { background: var(--terracota-dark); }
+
+    .card {
+      background: var(--crema-suave);
+      border: 1px solid var(--borde);
+      border-top: 4px solid var(--verde);
+      border-radius: 10px;
+      padding: 24px 18px;
+      text-align: center;
+    }
+    .card i { font-size: 36px; color: var(--terracota); }
+    .card h3 {
+      font-family: var(--font-titulo);
+      font-weight: 600;
+      font-size: 17px;
+      color: var(--verde);
+      margin: 12px 0 6px;
+    }
+    .card p { font-size: 14px; color: var(--texto-suave); }
+
+    nav a:hover { color: var(--terracota); }
+  </style>
+</head>
+<body>
+
+<!-- ── NAVBAR ── -->
+<header style="background:var(--crema); display:flex; align-items:center; justify-content:space-between; padding:14px 40px; border-bottom:2px solid var(--verde); flex-wrap:wrap; gap:10px; position:sticky; top:0; z-index:100; box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+  <div style="display:flex; align-items:center; gap:10px;">
+    <span style="display:inline-flex; width:36px; height:36px; border:2px solid var(--verde); border-radius:6px; align-items:center; justify-content:center; color:var(--verde);">
+      <i class="ti ti-books" style="font-size:20px;" aria-hidden="true"></i>
+    </span>
+    <span style="font-family:var(--font-titulo); font-weight:600; font-size:16px; color:var(--verde); line-height:1.2; max-width:200px;">Biblioteca Popular Pueyrredón Norte</span>
+  </div>
+  <nav style="display:flex; gap:24px; font-size:15px; color:var(--verde); font-weight:600; flex-wrap:wrap;">
+    <a href="#" style="border-bottom:2px solid var(--terracota); padding-bottom:2px;">Inicio</a>
+    <a href="#nosotros">Sobre Nosotros</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#novedades">Novedades</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<!-- ── HERO ── -->
+<section style="position:relative; height:420px; overflow:hidden;">
+  <svg viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice" style="position:absolute; inset:0; width:100%; height:100%;" aria-hidden="true">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#c6b48a"/>
+        <stop offset="100%" stop-color="#dfd0b0"/>
+      </linearGradient>
+    </defs>
+    <rect width="1200" height="420" fill="url(#sky)"/>
+    <rect y="295" width="1200" height="125" fill="#8a9d6e"/>
+    <rect y="345" width="1200" height="75"  fill="#7a8d5f"/>
+    <!-- Edificio neocolonial -->
+    <rect x="460" y="178" width="280" height="175" fill="#f2ece0"/>
+    <rect x="460" y="178" width="280" height="16"  fill="#e4dccb"/>
+    <polygon points="445,178 600,114 755,178" fill="#b5622f"/>
+    <rect x="591" y="130" width="22" height="36" fill="#8f4a22"/>
+    <!-- Puerta arco -->
+    <path d="M578 353 L578 272 Q600 250 622 272 L622 353 Z" fill="#4D6B45"/>
+    <line x1="600" y1="254" x2="600" y2="353" stroke="#3a5235" stroke-width="2"/>
+    <!-- Ventanas arco -->
+    <path d="M490 308 L490 258 Q507 240 524 258 L524 308 Z" fill="#9db3c4" stroke="#8f4a22" stroke-width="2"/>
+    <path d="M676 308 L676 258 Q693 240 710 258 L710 308 Z" fill="#9db3c4" stroke="#8f4a22" stroke-width="2"/>
+    <!-- Árboles -->
+    <circle cx="280" cy="290" r="54" fill="#6f8552"/><rect x="274" y="290" width="13" height="65" fill="#7a5a3a"/>
+    <circle cx="920" cy="288" r="48" fill="#6f8552"/><rect x="914" y="288" width="12" height="62" fill="#7a5a3a"/>
+    <circle cx="160" cy="310" r="36" fill="#5e7344"/><rect x="155" y="310" width="10" height="42" fill="#7a5a3a"/>
+    <circle cx="1040" cy="306" r="40" fill="#5e7344"/><rect x="1035" y="306" width="10" height="44" fill="#7a5a3a"/>
+  </svg>
+  <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(28,38,18,0.18), rgba(28,38,18,0.6));"></div>
+  <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:0 32px;">
+    <p style="font-family:var(--font-cuerpo); font-size:13px; font-weight:600; color:#e0d0a8; letter-spacing:3px; text-transform:uppercase; margin-bottom:14px;">Villa Pueyrredón · desde 1916</p>
+    <h1 style="font-family:var(--font-titulo); font-weight:700; font-size:40px; color:#fdf8ee; margin:0 0 26px; max-width:600px; line-height:1.2; text-shadow:0 2px 5px rgba(0,0,0,0.4);">Más de 100 años acompañando al barrio</h1>
+    <a href="#servicios" class="btn-primary" style="font-size:17px; padding:14px 32px;">Conocé Nuestros Servicios</a>
+  </div>
+</section>
+
+<!-- ── SOBRE NOSOTROS ── -->
+<section id="nosotros" style="background:var(--crema-oscura); padding:60px 40px;">
+  <div style="max-width:980px; margin:0 auto; display:flex; gap:44px; align-items:center; flex-wrap:wrap;">
+    <div style="flex:1 1 300px; min-width:280px;">
+      <p class="section-title">Sobre Nosotros</p>
+      <div class="section-accent" style="margin-bottom:22px;"></div>
+      <p style="font-size:16px; color:#4a4234; margin-bottom:16px;">La Biblioteca Popular Pueyrredón Norte es una institución cultural comunitaria sin fines de lucro con más de 100 años de historia en el barrio. Fundada en 1916 por la Asociación Vecinal Pueyrredón Norte, ofrece préstamo de libros, sala de lectura y talleres para vecinos de todas las edades.</p>
+      <p style="font-size:16px; color:#4a4234;">Conocida como <em style="color:var(--terracota); font-style:italic;">"la Casita de Tucumán"</em> por su arquitectura neocolonial, es parte de la identidad y la memoria del barrio.</p>
+    </div>
+    <div style="flex:1 1 260px; min-width:240px;">
+      <svg viewBox="0 0 320 220" style="width:100%; height:auto; border-radius:10px; border:1px solid var(--borde);" aria-label="Ilustración del edificio de la biblioteca">
+        <rect width="320" height="220" fill="#e7dcc4"/>
+        <rect y="150" width="320" height="70" fill="#8a9d6e"/>
+        <rect x="90" y="88" width="140" height="94" fill="#f2ece0"/>
+        <polygon points="80,88 160,52 240,88" fill="#b5622f"/>
+        <rect x="154" y="64" width="14" height="24" fill="#8f4a22"/>
+        <path d="M138 182 L138 130 Q160 112 182 130 L182 182 Z" fill="#4D6B45"/>
+        <line x1="160" y1="115" x2="160" y2="182" stroke="#3a5235" stroke-width="1.5"/>
+        <path d="M104 155 L104 122 Q116 110 128 122 L128 155 Z" fill="#9db3c4" stroke="#8f4a22" stroke-width="1.5"/>
+        <path d="M192 155 L192 122 Q204 110 216 122 L216 155 Z" fill="#9db3c4" stroke="#8f4a22" stroke-width="1.5"/>
+        <circle cx="50" cy="150" r="28" fill="#6f8552"/><rect x="46" y="150" width="8" height="40" fill="#7a5a3a"/>
+        <circle cx="274" cy="152" r="24" fill="#6f8552"/><rect x="270" y="152" width="7" height="38" fill="#7a5a3a"/>
+        <text x="160" y="212" font-family="serif" font-size="9" fill="#5a4a32" text-anchor="middle" font-style="italic">Cochrane 2334 · Villa Pueyrredón</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICIOS ── -->
+<section id="servicios" style="background:var(--crema); padding:60px 40px;">
+  <div style="max-width:980px; margin:0 auto;">
+    <div style="text-align:center; margin-bottom:40px;">
+      <p class="section-title">Servicios</p>
+      <div class="section-accent" style="margin:0 auto;"></div>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px;">
+      <div class="card">
+        <i class="ti ti-book" aria-hidden="true"></i>
+        <h3>Préstamo de Libros</h3>
+        <p>Colección general, infantil y de referencia disponible para socios.</p>
+      </div>
+      <div class="card">
+        <i class="ti ti-armchair" aria-hidden="true"></i>
+        <h3>Sala de Lectura</h3>
+        <p>Espacio gratuito, tranquilo y abierto a toda la comunidad.</p>
+      </div>
+      <div class="card">
+        <i class="ti ti-users-group" aria-hidden="true"></i>
+        <h3>Talleres Comunitarios</h3>
+        <p>Zumba, lectura y actividades para niños y adultos.</p>
+      </div>
+      <div class="card">
+        <i class="ti ti-masks-theater" aria-hidden="true"></i>
+        <h3>Actividades Culturales</h3>
+        <p>Conciertos, teatro y eventos para todo el barrio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── NOVEDADES ── -->
+<section id="novedades" style="background:var(--crema-oscura); padding:60px 40px;">
+  <div style="max-width:980px; margin:0 auto;">
+    <div style="text-align:center; margin-bottom:40px;">
+      <p class="section-title">Novedades y Agenda</p>
+      <div class="section-accent" style="margin:0 auto;"></div>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:20px;">
+
+      <article style="background:var(--crema-suave); border:1px solid var(--borde); border-radius:10px; overflow:hidden;">
+        <div style="background:var(--verde); padding:10px 16px; display:flex; align-items:center; gap:8px;">
+          <i class="ti ti-calendar-event" style="color:#EDCBA0; font-size:18px;" aria-hidden="true"></i>
+          <span style="font-size:13px; font-weight:600; color:#e4dcc6; letter-spacing:0.5px;">Julio 2026</span>
+        </div>
+        <div style="padding:20px 20px 24px;">
+          <h3 style="font-family:var(--font-titulo); font-size:19px; color:var(--verde); margin-bottom:8px;">Taller de Cuentacuentos</h3>
+          <p style="font-size:14px; color:var(--texto-suave); margin-bottom:14px;">Actividad gratuita para niños de 4 a 8 años. Todos los sábados a las 10:00 hs.</p>
+          <span style="font-size:13px; font-weight:600; color:var(--terracota);">Entrada libre y gratuita</span>
+        </div>
+      </article>
+
+      <article style="background:var(--crema-suave); border:1px solid var(--borde); border-radius:10px; overflow:hidden;">
+        <div style="background:var(--verde); padding:10px 16px; display:flex; align-items:center; gap:8px;">
+          <i class="ti ti-calendar-event" style="color:#EDCBA0; font-size:18px;" aria-hidden="true"></i>
+          <span style="font-size:13px; font-weight:600; color:#e4dcc6; letter-spacing:0.5px;">Agosto 2026</span>
+        </div>
+        <div style="padding:20px 20px 24px;">
+          <h3 style="font-family:var(--font-titulo); font-size:19px; color:var(--verde); margin-bottom:8px;">Concierto de Tango en el Patio</h3>
+          <p style="font-size:14px; color:var(--texto-suave); margin-bottom:14px;">Una noche de tango en el patio histórico de la biblioteca. Sábado 15 a las 19:00 hs.</p>
+          <span style="font-size:13px; font-weight:600; color:var(--terracota);">Cupos limitados</span>
+        </div>
+      </article>
+
+      <article style="background:var(--crema-suave); border:1px solid var(--borde); border-radius:10px; overflow:hidden;">
+        <div style="background:var(--verde); padding:10px 16px; display:flex; align-items:center; gap:8px;">
+          <i class="ti ti-calendar-event" style="color:#EDCBA0; font-size:18px;" aria-hidden="true"></i>
+          <span style="font-size:13px; font-weight:600; color:#e4dcc6; letter-spacing:0.5px;">Permanente</span>
+        </div>
+        <div style="padding:20px 20px 24px;">
+          <h3 style="font-family:var(--font-titulo); font-size:19px; color:var(--verde); margin-bottom:8px;">Donación de Libros</h3>
+          <p style="font-size:14px; color:var(--texto-suave); margin-bottom:14px;">Aceptamos libros en buen estado durante el horario de atención. ¡Ayudá a crecer la colección!</p>
+          <span style="font-size:13px; font-weight:600; color:var(--terracota);">Todo el año</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACTO ── -->
+<section id="contacto" style="background:var(--crema); padding:60px 40px;">
+  <div style="max-width:720px; margin:0 auto; text-align:center;">
+    <p class="section-title">Contactanos</p>
+    <div class="section-accent" style="margin:0 auto 22px;"></div>
+    <p style="font-size:16px; color:var(--texto-suave); margin-bottom:38px;">¿Querés asociarte, consultar por un libro o sumarte a un taller? Escribinos o acercate directamente.</p>
+    <div style="display:flex; flex-wrap:wrap; gap:16px; justify-content:center; margin-bottom:36px;">
+      <div style="background:var(--crema-suave); border:1px solid var(--borde); border-radius:10px; padding:18px 24px; display:flex; align-items:center; gap:12px; min-width:210px; text-align:left;">
+        <i class="ti ti-map-pin" style="font-size:26px; color:var(--verde); flex-shrink:0;" aria-hidden="true"></i>
+        <div>
+          <div style="font-weight:600; font-size:13px; color:var(--verde); margin-bottom:2px;">Dirección</div>
+          <div style="font-size:14px; color:var(--texto-suave);">Cochrane 2334, Villa Pueyrredón</div>
+        </div>
+      </div>
+      <div style="background:var(--crema-suave); border:1px solid var(--borde); border-radius:10px; padding:18px 24px; display:flex; align-items:center; gap:12px; min-width:210px; text-align:left;">
+        <i class="ti ti-phone" style="font-size:26px; color:var(--verde); flex-shrink:0;" aria-hidden="true"></i>
+        <div>
+          <div style="font-weight:600; font-size:13px; color:var(--verde); margin-bottom:2px;">Teléfono</div>
+          <div style="font-size:14px; color:var(--texto-suave);">011 4572-9107</div>
+        </div>
+      </div>
+      <div style="background:var(--crema-suave); border:1px solid var(--borde); border-radius:10px; padding:18px 24px; display:flex; align-items:center; gap:12px; min-width:210px; text-align:left;">
+        <i class="ti ti-clock" style="font-size:26px; color:var(--verde); flex-shrink:0;" aria-hidden="true"></i>
+        <div>
+          <div style="font-weight:600; font-size:13px; color:var(--verde); margin-bottom:2px;">Horarios</div>
+          <div style="font-size:14px; color:var(--texto-suave);">Lunes a viernes · 17:00 a 20:00</div>
+        </div>
+      </div>
+    </div>
+    <a href="mailto:contacto@bibliotecapueyrredon.org.ar" class="btn-primary" style="font-size:17px; padding:15px 36px;">
+      <i class="ti ti-mail" style="margin-right:8px; vertical-align:-2px;" aria-hidden="true"></i>Envianos un mensaje
+    </a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer style="background:var(--verde); color:#eae3d0; padding:44px 40px 20px;">
+  <div style="max-width:980px; margin:0 auto;">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:30px; margin-bottom:32px;">
+      <div>
+        <div style="font-family:var(--font-titulo); font-weight:600; font-size:18px; color:#fdf8ee; margin-bottom:10px; line-height:1.3;">Biblioteca Popular<br>Pueyrredón Norte</div>
+        <p style="font-size:14px; color:#c9d3ba; line-height:1.7;">Institución cultural comunitaria<br>sin fines de lucro · desde 1916</p>
+      </div>
+      <div>
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+          <i class="ti ti-map-pin" style="font-size:18px; color:#EDCBA0;" aria-hidden="true"></i>
+          <span style="font-weight:600; color:#fdf8ee;">Dirección</span>
+        </div>
+        <p style="font-size:14px; color:#e4dcc6;">Cochrane 2334<br>Villa Pueyrredón, CABA</p>
+      </div>
+      <div>
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+          <i class="ti ti-clock" style="font-size:18px; color:#EDCBA0;" aria-hidden="true"></i>
+          <span style="font-weight:600; color:#fdf8ee;">Horarios</span>
+        </div>
+        <p style="font-size:14px; color:#e4dcc6;">Lunes a viernes<br>17:00 a 20:00 hs</p>
+      </div>
+      <div>
+        <div style="font-weight:600; color:#fdf8ee; margin-bottom:12px;">Seguinos</div>
+        <div style="display:flex; gap:14px;">
+          <a href="#" style="color:#EDCBA0; font-size:26px;" title="Facebook" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
+          <a href="#" style="color:#EDCBA0; font-size:26px;" title="Instagram" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div style="border-top:1px solid #5f7d56; padding-top:18px; text-align:center; font-size:13px; color:#c9d3ba;">
+      Biblioteca Popular Pueyrredón Norte &middot; "la Casita de Tucumán" &middot; Villa Pueyrredón, Buenos Aires
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
